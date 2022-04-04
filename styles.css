@@ -1,0 +1,81 @@
+
+
+nav{
+    background-color: coral;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.students{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    border: 2px solid purple;
+    width: 350px;
+    height:50 ;
+    margin: 10px;
+}
+.card img{
+    width: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .students{
+        display: block;
+        list-style: none;
+    }
+
+    .cards{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .students{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    footer{
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 768px){
+     .students{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
